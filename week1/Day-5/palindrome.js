@@ -11,7 +11,7 @@
 // // Example 1:
 
 // //Input:
- let x = 121
+ let x = 1234321
 // // Output: true
 // // Explanation: 121 reads as 121 from left to right and from right to left.
 var isPalindrome = function(x) {
@@ -24,13 +24,19 @@ var isPalindrome = function(x) {
     }
     let str=""
   for(let j=0;j<narr.length;j++){
-      str+=narr[j]
+      str+=narr[j] //it is taking o n2 time complexity I have replace it with join("")
   }
   return str==x
    
     
 };
- console.log(isPalindrome(x))
+//  console.log(isPalindrome(x))
+
+ function optimizedPalindrome(x){
+    let arr=x.toString().split("").reverse().join("")
+    return arr==x
+ }
+ console.log(optimizedPalindrome(x))
 
 
 
@@ -96,4 +102,4 @@ var isPalindrome = function(x) {
 // 🛡 Mantra for You:
 // “DSA is not about speed. It’s about building patterns, step by step. Even pausing is progress.”
 
-learning is we can only use split with string only.
+// learning is we can only use split with string only.
