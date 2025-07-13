@@ -1,0 +1,72 @@
+✅ Day 1 – 2D Arrays / Multidimensional Arrays
+A 2D array stores data in rows and columns (like a matrix).
+
+Useful in real-world problems like games, spreadsheets, or image processing.
+
+Know how to loop row-wise, column-wise, and diagonally.
+
+✅ Day 2 – Diagonal Printing in Matrix
+Understand matrix traversal logic.
+
+Learn how to extract main diagonal and secondary diagonal using index logic:
+
+i == j → main diagonal
+
+i + j == n - 1 → secondary diagonal
+
+✅ Day 3 – Two Sum Problem Using Map
+Use a Map to store previously seen numbers.
+
+Lookup for target - current in O(1) time.
+
+Reduces time complexity from O(n²) ➝ O(n).
+
+✅ Day 3.5 – Understanding Map in JavaScript
+Map is a key-value store with O(1) access.
+
+Can store any data type as keys (unlike objects).
+
+Use .set(), .get(), .has() to manage data efficiently.
+
+✅ Day 4 – Longest Common Prefix
+Compare strings column by column (vertical scan).
+
+Stop at the first mismatch.
+
+Very useful for autocomplete, search, and pattern recognition.
+
+✅ Day 5 – How to Handle Mind Freeze When Seeing New DSA Problems
+Don’t jump to coding — understand the question first.
+
+Dry-run manually.
+
+Recognize patterns: is it array, string, map, etc.
+
+Write pseudocode before implementation.
+
+If stuck, pause — not panic.
+
+✅ Day 6 – Palindrome Checker
+First version used string/array methods and was O(n²) due to += in a loop.
+
+Optimized version used .split().reverse().join() for O(n) time.
+
+Mathematical version used digit reversal (no strings) for O(log n) time and O(1) space.
+
+✅ Day 7 – Mathematical Palindrome Check (No String Conversion)
+Extract digits using % 10 and Math.floor().
+
+Reverse the number mathematically.
+
+Compare original vs reversed number.
+
+Efficient for interviews — no extra space.
+
+✅ Day 8 – Roman to Integer Conversion
+Use a map to assign value to each Roman symbol.
+
+If a smaller value comes before a larger one → subtract.
+
+Otherwise → add.
+
+Important string parsing logic with greedy approach
